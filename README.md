@@ -20,6 +20,10 @@ It is a companion to the Delicious Brains [post](https://deliciousbrains.com/?p=
 1. Enter your AWS key, secret and bucket name in the `S3Filesystem` module config in `codeception.yml`
 1. Configure your local database credentials in the `WPDb` module config in `codeception.yml`
 1. Add a virtual host for `wpos3-acceptance.test` pointing to `/tests/tmp/wp` in the cloned repo
+1. If you want to test using FireFox > 43, you'll need to download and install the [geckodriver](https://github.com/mozilla/geckodriver/releases).
+1. If you want to test using Chrome:
+	1. Download and install the [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+	1. Change the `browser` setting in the `codeception.yml` file to `chrome`
 
 ### Running the Tests
 
